@@ -15,8 +15,17 @@
             "32": "images/icon32.png" 
         },
         "default_title": "Pumpo",
-        "default_popup": "popup.html", 
+        "default_popup": "./popup.html", 
         "offline_enabled": false
      },
-     "permissions": ["storage"]
+     "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+P",
+                "mac": "MacCtrl+P"
+            },
+            "description": "Opens Popup"
+        }
+    },
+     "permissions": ["storage", "activeTab"]
 }

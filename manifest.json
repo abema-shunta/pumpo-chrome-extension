@@ -27,5 +27,10 @@
             "description": "Opens Popup"
         }
     },
-     "permissions": ["storage", "activeTab"]
+     "permissions": [
+         "storage", 
+         "tabs",
+         "http://*/",
+         "https://*/"
+    ]
 }
